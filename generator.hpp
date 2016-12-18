@@ -3,11 +3,12 @@
 
 //|
 //| micro generator/coroutine/continuation for C++
-//| author: Andrew Fedoniouk @ sciter.com
+//| author: Andrew @ sciter.com
 //| idea borrowed from: "coroutines in C" by Simon Tatham,
 //| http://www.chiark.greenend.org.uk/~sgtatham/coroutines.html
 //|
-
+//| License: BSD
+//|
 namespace generator
 {
   //++ coroutine, generator, continuation for C++
