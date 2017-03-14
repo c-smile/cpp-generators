@@ -23,7 +23,7 @@ namespace generator
     
   private: 
     instance( const instance& ); // non-copyable
-    instance& instance=( const instance& ); // non-assignable
+    instance& operator=( const instance& ); // non-assignable
   };
 
   // Declaration 
@@ -33,7 +33,7 @@ namespace generator
   // Shall end with $stop and contain at least one $emit[n] 
   #define $emit(T)            bool operator()(T& _rv) { switch(_line) { case 0:;
   #define $emit2(T1,T2)       bool operator()(T1& _rv1, T2& _rv2) { switch(_line) { case 0:;
-  #define $emit4(T1,T2,T3)    bool operator()(T1& _rv1, T2& _rv2, T3& _rv3 ) { switch(_line) { case 0:;
+  #define $emit3(T1,T2,T3)    bool operator()(T1& _rv1, T2& _rv2, T3& _rv3 ) { switch(_line) { case 0:;
   #define $emit4(T1,T2,T3,T4) bool operator()(T1& _rv1, T2& _rv2, T3& _rv3, T4& _rv4 ) { switch(_line) { case 0:;
   
   // yields next value(s)  
