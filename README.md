@@ -1,5 +1,5 @@
 # cpp-generators
-Generators/corroutines for C++
+Generators for C++
 
 ## Introduction
 
@@ -62,3 +62,7 @@ The `gen(n)` there is in fact an invocation of the `bool operator()(int& v)` met
 ## License
 
 The generator.hpp is licensed under [The BSD License](https://opensource.org/licenses/bsd-license.php).
+
+## Async/await usage
+
+Please check [async.hpp](https://github.com/c-smile/async.hpp) if you need to use this approach in asynchronous code.  
